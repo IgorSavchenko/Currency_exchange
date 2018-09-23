@@ -57,7 +57,6 @@ window.addEventListener("load", function() {
   document.querySelectorAll('.card__checkbox__input').forEach( function(element) {
     element.addEventListener('change', function() {
       let infoBlock = element.closest('.card__info');
-      console.log(infoBlock);
       if (this.checked) {
         infoBlock.dataset.filter = "percent";
         infoBlock.querySelectorAll('.card__field i').forEach( function(element) {
