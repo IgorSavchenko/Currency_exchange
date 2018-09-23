@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="48px" height="48px" viewBox="0 0 24 24">
+<filter filterUnits="objectBoundingBox" x="-10.00" y="-10.00" width="120.00" height="120.00" id="filter0">
+<feImage x="2" y="2" width="20" height="20" preserveApectRatio="none" xlink:href="#symbol0"/>
+<feComposite in="grImage1" in2="SourceAlpha" operator="in" result="grOverlay1"/>
+<feBlend in="grOverlay1" in2="SourceGraphic" mode="normal" result="gradientOverlay1"/>
+</filter>
+<linearGradient id="angle_PSgrad_0" x1="50%" y1="93.5%" x2="50%" y2="6.5%">
+    <stop offset="0%" stop-color="rgb(172,172,172)" stop-opacity="1" />
+    <stop offset="13.3789%" stop-color="rgb(121,121,121)" stop-opacity="1" />
+    <stop offset="23.9502%" stop-color="rgb(224,224,224)" stop-opacity="1" />
+    <stop offset="32.8613%" stop-color="rgb(144,144,144)" stop-opacity="1" />
+    <stop offset="44.1406%" stop-color="rgb(216,216,216)" stop-opacity="1" />
+    <stop offset="54.9316%" stop-color="rgb(118,118,118)" stop-opacity="1" />
+    <stop offset="64.0869%" stop-color="rgb(243,243,243)" stop-opacity="1" />
+    <stop offset="72.998%" stop-color="rgb(165,165,165)" stop-opacity="1" />
+    <stop offset="82.1533%" stop-color="rgb(223,223,223)" stop-opacity="1" />
+    <stop offset="90.6006%" stop-color="rgb(255,255,255)" stop-opacity="1" />
+    <stop offset="100%" stop-color="rgb(132,132,132)" stop-opacity="1" />
+</linearGradient>
+
+<defs>
+<rect x="0" y="0" width="20" height="20" id="symbol0" fill="url(#angle_PSgrad_0)"/><symbol id="symbol1"><circle cx="12.00" cy="12.00" r="10.00"/></symbol></defs>
+<g><circle cx="12.00" cy="12.00" r="10.00" fill="rgb(255,255,255)" filter="url(#filter0)"/><use xlink:href="#symbol1" x="0" y="0" width="24" height="24" fill="none" stroke="rgb(255,255,255)" stroke-width="3.00px"/></g></svg>

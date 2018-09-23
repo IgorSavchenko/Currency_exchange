@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- internal CSS styles -->
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <!-- favicon -->
+  <!-- <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"> -->
+  <title>Test project</title>
+</head>
+
+<!-- BODY -->
+
+<body>
+
+  <!-- ... -->
+
+  <!-- section exchange -->
+  <section class="exchange">
+    <div class="container">
+
+      <!-- currency -->
+      <div class="currency">
+        <p>Select currency to exchange:</p>
+        <div class="select">
+          <input type="text" name="currency" value="USD">
+          <i class="fas fa-chevron-down"></i>
+          <ul class="select__list hidden">
+            <li class="select__item active">USD</li>
+            <li class="select__item">EUR</li>
+            <li class="select__item">RUB</li>
+            <li class="select__item">GBP</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- cards -->
+      <div class="cards">
+
+        <!-- card 1 -->
+        <div class="card card--ethereum">
+          <h2 class="card__subtitle">ethereum</h2>
+          <div class="card__logo">
+            <img src="assets/img/ethereum.png" alt="ethereum picture" width="296" height="230">
+            <img class="card__logo__shadow" src="assets/img/shadow.png" alt="shadow">
+          </div>
+          <div class="card__info" data-filter="percent">
+            <div class="card__price">
+              <p>price</p>
+              <p><i class="currency-icon fas fa-sm fa-dollar-sign"></i><span>22 526.92</span></p>
+            </div>
+            <div class="card__checkbox">
+              <p>Percent change</p>
+              <input class="card__checkbox__input" type="checkbox" id="checkbox--ethereum" checked>
+              <label for="checkbox--ethereum" class="card__checkbox__label">
+                <span class="card__checkbox__indicator"></span>
+              </label>
+            </div>
+            <div class="card__field">
+              <p>Hour change</p>
+              <p><span data-filter="hour">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Day change</p>
+              <p><span data-filter="day">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Week change</p>
+              <p><span data-filter="week">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Month change</p>
+              <p><span data-filter="month">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card card--litecoin">
+          <h2 class="card__subtitle">litecoin</h2>
+          <div class="card__logo">
+            <img src="assets/img/litecoin.png" alt="litecoin picture" width="107" height="117">
+            <img class="card__logo__shadow" src="assets/img/shadow.png" alt="shadow">
+          </div>
+          <div class="card__info" data-filter="percent">
+            <div class="card__price">
+              <p>price</p>
+              <p><i class="currency-icon fas fa-sm fa-dollar-sign"></i><span>22 526.92</span></p>
+            </div>
+            <div class="card__checkbox">
+              <p>Percent change</p>
+              <input class="card__checkbox__input" type="checkbox" id="checkbox--litecoin" checked>
+              <label for="checkbox--litecoin" class="card__checkbox__label">
+                <span class="card__checkbox__indicator"></span>
+              </label>
+            </div>
+            <div class="card__field">
+              <p>Hour change</p>
+              <p><span data-filter="hour">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Day change</p>
+              <p><span data-filter="day">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Week change</p>
+              <p><span data-filter="week">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Month change</p>
+              <p><span data-filter="month">+266</span><i class="fas fa-sm fa-percent"></i></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card card--bitcoin">
+          <h2 class="card__subtitle">bitcoin</h2>
+          <div class="card__logo">
+            <img src="assets/img/bitcoin.png" alt="bitcoin picture" width="197" height="151">
+            <img class="card__logo__shadow" src="assets/img/shadow.png" alt="shadow">
+          </div>
+          <div class="card__info" data-filter="price">
+            <div class="card__price">
+              <p>price</p>
+              <p><i class="currency-icon fas fa-sm fa-dollar-sign"></i><span>22 526.92</span></p>
+            </div>
+            <div class="card__checkbox">
+              <p>Percent change</p>
+              <input class="card__checkbox__input" type="checkbox" id="checkbox--bitcoin">
+              <label for="checkbox--bitcoin" class="card__checkbox__label">
+                <span class="card__checkbox__indicator"></span>
+              </label>
+            </div>
+            <div class="card__field">
+              <p>Hour change</p>
+              <p><span data-filter="hour">+266</span><i class="currency-icon fas fa-sm fa-dollar-sign"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Day change</p>
+              <p><span data-filter="day">+266</span><i class="currency-icon fas fa-sm fa-dollar-sign"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Week change</p>
+              <p><span data-filter="week">+266</span><i class="currency-icon fas fa-sm fa-dollar-sign"></i></p>
+            </div>
+            <div class="card__field">
+              <p>Month change</p>
+              <p><span data-filter="month">+266</span><i class="currency-icon fas fa-sm fa-dollar-sign"></i></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ... -->
+
+  <!-- scripts -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="assets/js/main.min.js"></script>
+
+</body>
+
+</html>
