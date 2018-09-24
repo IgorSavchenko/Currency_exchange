@@ -8,12 +8,16 @@ window.addEventListener("load", function() {
   const ITEM = document.querySelector(".select__item");
   const ITEMS = document.querySelectorAll(".select__item");
 
-  INPUT.addEventListener("click", function() {
-    SELECT.classList.remove("hidden");
-    ITEMS.forEach(function(item) {
-      if (item.innerHTML != INPUT.value) item.classList.remove("hidden")
-      else item.classList.add("hidden");
-    });
+  document.addEventListener("click", function(event) {
+    console.log(event.target);
+    if (event.target == INPUT) {
+      SELECT.classList.remove("hidden");
+      ITEMS.forEach(function(item) {
+        if (item.innerHTML != INPUT.value) item.classList.remove("hidden")
+        else item.classList.add("hidden");
+      });
+    }
+    else if ((event.target != ITEM)) SELECT.classList.add("hidden");
   });
 
   ITEMS.forEach(function(item) {
